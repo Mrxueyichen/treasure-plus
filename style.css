@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-image: url('library.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex; /* 添加这一行 */
+  justify-content: center; /* 添加这一行 */
+  align-items: center; /* 添加这一行 */
+  height: 100vh; /* 添加这一行 */
+}
+
+#step-info {
+  font-size: 20px;
+  font-weight: 50px;
+  color: white;
+  line-height: 50px;
+  z-index:1;
+}
+
+p{
+  font-size: 20px;
+  font-weight: 50px;
+  color: white;
+  line-height: 50px;
+  z-index:2;
+}
+button {
+  font-size: 20px;
+  font-weight: 50px;
+  color: white;
+  line-height: 50px;
+  background-color: #4CAF50;
+  display: block;
+  width: 200px;
+}
+#treasure-img {
+  display: none;
+  width: 200px;
+  height:auto;
+  transition:opacity 1s ease-in-out;
+}
