@@ -138,7 +138,7 @@ function updateGameHistory(playerInfo, newScore) {
 
       async function findTreasureWithAsyncAwait() {
         try {
-          const playerInfo = loadPlayerInfo() || { playerId: 'new', nickname: '新玩家', gameHistory: [] };
+          const playerInfo = loadPlayerInfo() || { playerId: 'new', nickname: '玩家1', gameHistory: [] };
           // 获取初始线索
           await loadAndDisplayText('library.txt', 'library-info');
           const clue1 = await TreasureMap.getInitialClue();
@@ -198,6 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (playerInfo) {
     // 可以在这里更新页面上的元素，显示玩家信息
     console.log('玩家信息恢复成功:', playerInfo);
+    alert('欢迎回来，' + playerInfo.nickname);
   } else {
     console.log('没有找到存储的玩家信息');
   }
